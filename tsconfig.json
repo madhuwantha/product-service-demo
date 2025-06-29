@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2022",         // Specifies the ECMAScript target version for the compiled JavaScript.
+    "module": "commonjs",       // Specifies the module system to use (e.g., CommonJS for Node.js).
+    "outDir": "./dist",         // The output directory for compiled JavaScript files.
+    "rootDir": "./src",         // The root directory containing your TypeScript source files.
+    "strict": true,             // Enables a set of strict type-checking options for better code quality.
+    "esModuleInterop": true,    // Allows default imports from modules with no default export.
+    "skipLibCheck": true,       // Skips type checking of declaration files (e.g., node_modules/@types).
+    "forceConsistentCasingInFileNames": true // Ensures consistent casing in file names for cross-platform compatibility.
+  },
+  "include": [
+    "src/**/*"                  // Specifies which files to include in the compilation (e.g., all .ts files in 'src').
+  ],
+  "exclude": [
+    "node_modules"              // Specifies which files or directories to exclude from the compilation.
+  ]
+}
