@@ -1,10 +1,17 @@
 import express from 'express'
 import mongoose from 'mongoose'
-// import cors from 'cors'
+import 'dotenv/config'
+import cors from 'cors'
+
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
 
 const app = express()
 app.use(express.json());
-// app.use(cors())
+app.use(cors(corsOptions))
 app.use(express.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 3000
